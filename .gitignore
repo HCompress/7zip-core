@@ -1,0 +1,105 @@
+# 7-Zip (nmake / MSVC / GCC / Clang)
+# Do not ignore Asm/{x86,arm,arm64} — those hold assembler sources.
+
+# Pack / install output (pack.ps1 copies binaries here)
+/OUT/
+
+# Per-target nmake output dirs (O=$(PLATFORM), default O=o)
+x64/
+x64con/
+o/
+
+# GCC/Clang object dirs (O=b/g_x64, b/m_arm64, …)
+b/
+
+# Compiled objects, libraries, binaries
+*.obj
+*.o
+*.lo
+*.slo
+*.d
+*.gch
+*.pch
+*.ilk
+*.pdb
+*.idb
+*.iobj
+*.ipdb
+*.sbr
+*.bsc
+*.pgc
+*.pgd
+*.map
+*.cod
+*.lst
+*.exp
+*.lib
+*.a
+*.lai
+*.la
+*.dll
+*.so
+*.so.*
+*.dylib
+*.exe
+*.out
+*.app
+*.res
+*.sfx
+*.dwo
+
+# Visual Studio (including VC6 .dsp/.dsw companions)
+.vs/
+ipch/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.ncb
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.VC.opendb
+*.aps
+*.opt
+*.plg
+*.clw
+*.tlog
+*.lastbuildstate
+*.unsuccessfulbuild
+*.recipe
+*.rsp
+BuildLog.htm
+
+# Common VS configuration output names
+# (x86/arm/arm64 omitted: they collide with Asm/)
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+[Ww][Ii][Nn]32/
+[Bb]in/
+[Oo]bj/
+
+# Editors / tools
+.idea/
+.vscode/
+.cache/
+*.code-workspace
+compile_commands.json
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+
+# OS
+.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.stackdump
+*.dmp
